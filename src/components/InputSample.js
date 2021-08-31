@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-function InputSample() {
+const InputSample= ()=> {
   const [inputs, setInputs] = useState({
     name: '',
     nickname: ''
@@ -22,7 +22,7 @@ function InputSample() {
       name: '',
       nickname: ''
     });
-    nameInput.current.focus();
+    nameInput.current.focus(); //Ref를 사용해서 이름input에 포커스를 가지게됨
   };
 
   return (

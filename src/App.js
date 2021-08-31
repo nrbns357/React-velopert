@@ -1,10 +1,10 @@
 import React from 'react';
-import InputSample from './InputSample';
+import UserList from './components/UserList';
 
 const App = () => {
   return (
     <>
-    <InputSample/>
+       <UserList/> 
     </>
   );
 };
