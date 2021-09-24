@@ -5,7 +5,7 @@ const InputSample= ()=> {
     name: '',
     nickname: ''
   });
-  const nameInput = useRef();
+  const nameInput = useRef(); //Ref란? 컴포넌트에서 특정 DOM을 선택해야 할때 Ref를 사용해야 한다.
 
   const { name, nickname } = inputs; // 비구조화 할당을 통해 값 추출
 
@@ -32,13 +32,13 @@ const InputSample= ()=> {
         placeholder="이름"
         onChange={onChange}
         value={name}
-        ref={nameInput}
-      />
+        />
       <input
         name="nickname"
         placeholder="닉네임"
         onChange={onChange}
         value={nickname}
+        ref={nameInput}
       />
       <button onClick={onReset}>초기화</button>
       <div>
